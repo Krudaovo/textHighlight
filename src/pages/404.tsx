@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import { graphql, HeadProps } from 'gatsby';
 
 export default function PageNotFount() {
   return (
