@@ -10,7 +10,7 @@ module.exports = {
 
       },
       fontFamily: {
-
+        roboto: 'Roboto'
       },
       screens: {
         "xs": "375px",

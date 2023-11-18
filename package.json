@@ -16,6 +16,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@fontsource/roboto": "^5.0.8",
     "gatsby": "^5.12.4",
     "gatsby-plugin-image": "^3.12.1",
     "gatsby-plugin-postcss": "^6.12.0",

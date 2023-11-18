@@ -7,7 +7,9 @@ type LayoutChildrenType = {
 export default function Layout({ children }: LayoutChildrenType) {
   return (
     <>
-      {children}
+      <div className='font-roboto'>
+        {children}
+      </div>
     </>
   );
 };

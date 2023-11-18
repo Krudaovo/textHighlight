@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Layout from '../components/layout';
 import { graphql, HeadProps } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
+import { onHoverScaleAndFollowImage } from '../gsap/animation';
 
 type MetaTypes = {
   site: {
@@ -17,11 +19,46 @@ type MetaTypes = {
 }
 
 export default function Home() {
+
+  useEffect(() => {
+    onHoverScaleAndFollowImage('.japan', '.sushi');
+    onHoverScaleAndFollowImage('.korea', '.drink');
+    onHoverScaleAndFollowImage('.taiwan', '.taiwan-food');
+    onHoverScaleAndFollowImage('.china', '.korean-food');
+    onHoverScaleAndFollowImage('.italia', '.pizza');
+  }, []);
+
   return (
     <>
       <Layout>
-        <div>
-          hello world
+        <div className='h-screen w-full bg-gradient-to-r from-rose-500/80 to-fuchsia-500/80'>
+          <ul className='text-gray-50 text-9xl italic grid justify-items-center gap-y-6 relative top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-default'>
+            <li className='japan'>Japan</li>
+            <li className='korea'>Korea</li>
+            <li className='taiwan'>Taiwan</li>
+            <li className='china'>Chaina</li>
+            <li className='italia'>Italia</li>
+          </ul>
+          <StaticImage
+            className='pizza image max-w-sm h-auto absolute top-0 left-0' style={{ scale: '0 0' }}
+            src='../images/foad-roshan-Y6OgisiGBjM-unsplash.jpg'
+            placeholder='blurred' imgStyle={{ objectFit: 'cover' }} quality={100} alt={'pizza'} />
+          <StaticImage
+            className='taiwan-food image max-w-sm h-auto absolute top-0 left-0' style={{ scale: '0 0' }}
+            src='../images/jenny-liu-X68a4jPM4c4-unsplash.jpg'
+            placeholder='blurred' imgStyle={{ objectFit: 'cover' }} quality={100} alt={'taiwan'} />
+          <StaticImage
+            className='drink image max-w-sm h-auto absolute top-0 left-0' style={{ scale: '0 0' }}
+            src='../images/omid-armin-QVvq5VvMlU4-unsplash.jpg'
+            placeholder='blurred' imgStyle={{ objectFit: 'cover' }} quality={100} alt='drink' />
+          <StaticImage
+            className='sushi image max-w-sm h-auto absolute top-0 left-0' style={{ scale: '0 0' }}
+            src='../images/spencer-chow-PF_zcUW_NYU-unsplash.jpg'
+            placeholder='blurred' imgStyle={{ objectFit: 'cover' }} quality={100} alt='sushi' />
+          <StaticImage
+            className='korean-food image max-w-sm h-auto absolute top-0 left-0' style={{ scale: '0 0' }}
+            src='../images/vicky-ng-8hCcjf2BxTk-unsplash.jpg'
+            placeholder='blurred' imgStyle={{ objectFit: 'cover' }} quality={100} alt='korean-food' />
         </div>
       </Layout>
     </>
