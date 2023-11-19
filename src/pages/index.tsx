@@ -27,8 +27,8 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <div className='h-screen w-full bg-gradient-to-r from-rose-500/80 to-fuchsia-500/80 flex overflow-hidden'>
-          <ul className='texts w-[450px] h-3/5 m-auto text-gray-50 text-9xl grid justify-items-center items-center cursor-default italic'>
+        <div className='h-screen w-full bg-gradient-to-r from-rose-500/80 to-fuchsia-500/80 overflow-hidden'>
+          <ul className='texts w-[450px] h-3/5 text-gray-50 text-9xl grid justify-items-center items-center relative top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-default italic'>
             <li className='text sushi'>sushi</li>
             <li className='text alcohol'>alcohol</li>
             <li className='text pizza'>pizza</li>
