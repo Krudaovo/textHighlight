@@ -35,17 +35,17 @@ export default function Home() {
           </ul>
           <StaticImage
             className='sushi image opacity-0 aspect-square max-w-sm h-auto absolute top-0 left-0 animate-material-shadow-md'
-            style={{ scale: '0 0' }}
+            style={{ scale: '0 0', position: 'absolute' }}
             src='../images/spencer-chow-PF_zcUW_NYU-unsplash.jpg'
             placeholder='blurred' imgStyle={{ objectFit: 'cover' }} quality={100} alt='sushi' />
           <StaticImage
             className='drink image opacity-0 aspect-square max-w-sm h-auto absolute top-0 left-0 animate-material-shadow-md'
-            style={{ scale: '0 0' }}
+            style={{ scale: '0 0', position: 'absolute' }}
             src='../images/omid-armin-QVvq5VvMlU4-unsplash.jpg'
             placeholder='blurred' imgStyle={{ objectFit: 'cover' }} quality={100} alt='drink' />
           <StaticImage
             className='pizza image opacity-0 aspect-square max-w-sm h-auto absolute top-0 left-0 animate-material-shadow-md'
-            style={{ scale: '0 0' }}
+            style={{ scale: '0 0', position: 'absolute' }}
             src='../images/foad-roshan-Y6OgisiGBjM-unsplash.jpg'
             placeholder='blurred' imgStyle={{ objectFit: 'cover' }} quality={100} alt={'pizza'} />
         </div>
