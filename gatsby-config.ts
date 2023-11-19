@@ -4,10 +4,10 @@ const config: GatsbyConfig = {
   siteMetadata: {
     charset: 'utf-8',
     lang: 'ja',
-    title: '',
-    description: '',
-    siteUrl: 'https://localhost:8000/',
-    themeColor: '#',
+    title: 'text-hover-fadein-image',
+    description: 'テキストにカーソルがホバーするとホバーしたテキストに応じた画像がフェードインアウトするデモサイトです。',
+    siteUrl: 'https://text-hover-fadein-image.netlify.app/',
+    themeColor: '#D946EF',
     // ogp:type
     // website, article, blog
     // bar, company, face, hotel, restaurant
@@ -17,7 +17,7 @@ const config: GatsbyConfig = {
     // actor, athlete, author, director, musician, politician, profile, public_figure
     // city, country, landmark, state_province,
     // activity, sport
-    ogpType: ''
+    ogpType: 'product'
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
